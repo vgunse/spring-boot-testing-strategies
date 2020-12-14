@@ -49,7 +49,7 @@ public class SuperHeroControllerMockMvcStandaloneTest {
         // MockitoAnnotations.initMocks(this);
         // Here we can't use @AutoConfigureJsonTesters because there isn't a Spring context
         JacksonTester.initFields(this, new ObjectMapper());
-        systm.out.println();
+        systm.out.println("sfsdfdsfd"+(1+2));
         // MockMvc standalone approach
         mvc = MockMvcBuilders.standaloneSetup(superHeroController)
                 .setControllerAdvice(new SuperHeroExceptionHandler())
