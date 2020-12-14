@@ -40,7 +40,7 @@ public class SuperHeroControllerMockMvcStandaloneTest {
     @InjectMocks
     private SuperHeroController superHeroController;
 
-    // This object will be magically initialized by the initFields method below.
+    // This object will be magically initialized by the initFields method below. test commit
     private JacksonTester<SuperHero> jsonSuperHero;
 
     @BeforeEach
