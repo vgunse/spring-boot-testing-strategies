@@ -41,7 +41,7 @@ public class SuperHeroControllerMockMvcStandaloneTest {
     private SuperHeroController superHeroController;
 
     // This object will be magically initialized by the initFields method below. test commit
-    private JacksonTester<SuperHero> jsonSuperHero;
+    public JacksonTester<SuperHero> jsonSuperHero;
 
     @BeforeEach
     public void setup() {
@@ -49,6 +49,7 @@ public class SuperHeroControllerMockMvcStandaloneTest {
         // MockitoAnnotations.initMocks(this);
         // Here we can't use @AutoConfigureJsonTesters because there isn't a Spring context
         JacksonTester.initFields(this, new ObjectMapper());
+        systm.out.println();
         // MockMvc standalone approach
         mvc = MockMvcBuilders.standaloneSetup(superHeroController)
                 .setControllerAdvice(new SuperHeroExceptionHandler())
