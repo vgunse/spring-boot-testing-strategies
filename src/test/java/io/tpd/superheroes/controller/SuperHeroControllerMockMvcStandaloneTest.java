@@ -55,6 +55,14 @@ public class SuperHeroControllerMockMvcStandaloneTest {
                 .setControllerAdvice(new SuperHeroExceptionHandler())
                 .addFilters(new SuperHeroFilter())
                 .build();
+          mvc = MockMvcBuilders.standaloneSetup(superHeroController)
+                .setControllerAdvice(new SuperHeroExceptionHandler())
+                .addFilters(new SuperHeroFilter())
+                .build();
+          mvc = MockMvcBuilders.standaloneSetup(superHeroController)
+                .setControllerAdvice(new SuperHeroExceptionHandler())
+                .addFilters(new SuperHeroFilter())
+                .build();
     }
 
     @Test
